@@ -7,7 +7,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useEffect, useRef } from 'react'
 
 import Header from '~/components/Header'
-import { FaGithub, FaGooglePlay, FaLinkedin, FaYoutube } from '~/components/icons'
+import { FaGithub, FaGooglePlay, FaAppStore, FaLinkedin, FaYoutube } from '~/components/icons'
 import { useScrollMemory } from '~/hooks/useScrollMemory'
 import { useAnalytics } from '~/lib/analytics/provider'
 import {
@@ -314,7 +314,7 @@ const Home: NextPage<HomeProps> = ({ articles }) => {
               <div className="wrap">
                 <h2>{projectsContent.amazingNote.title}</h2>
                 <p>{projectsContent.amazingNote.description}</p>
-                <div>
+                <div className="btn_container">
                   <Link
                     scroll={false}
                     href="/projects/amazing-note"
@@ -344,6 +344,17 @@ const Home: NextPage<HomeProps> = ({ articles }) => {
                     aria-label="Open Amazing Note on Google Play"
                   >
                     <FaGooglePlay size="24" />
+                  </a>
+                  <a
+                    href="https://apps.apple.com/us/app/amazing-note/id6756544285"
+                    target="_blank"
+                    onClick={() =>
+                      analytics.logSelectContent('project_btn', 'appstore_amazing_note')
+                    }
+                    rel="noreferrer"
+                    aria-label="Open Amazing Note on App Store"
+                  >
+                    <FaAppStore size="24" />
                   </a>
                 </div>
               </div>

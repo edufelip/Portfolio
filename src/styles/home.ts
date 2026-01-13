@@ -589,7 +589,8 @@ export const Project = styled.div<{ background?: string }>`
           }
         }
         a:nth-of-type(2),
-        a:nth-of-type(3) {
+        a:nth-of-type(3),
+        a:nth-of-type(4) {
           background-color: #f8f8f8;
           color: #000000;
           font-size: 16px;

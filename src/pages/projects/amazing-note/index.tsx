@@ -7,7 +7,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useEffect } from 'react'
 
 import Header from '~/components/Header'
-import { FaGithub, FaGooglePlay } from '~/components/icons'
+import { FaGithub, FaGooglePlay, FaAppStore } from '~/components/icons'
 import { FinnDetails } from '~/styles/finn'
 import { MainPageFace, ContactSection, HeroBackground } from '~/styles/home'
 import { getResumeContent } from '~/utils/i18n/resume'
@@ -117,7 +117,7 @@ const AmazingNote: NextPage = () => {
                   </div>
                 </div>
                 <p className="btn_container_title">
-                  <b>Github - Playstore</b>
+                  <b>Github - Playstore - App Store</b>
                 </p>
                 <div className="btn_container">
                   <a
@@ -135,6 +135,14 @@ const AmazingNote: NextPage = () => {
                     aria-label="Open Amazing Note on Google Play"
                   >
                     <FaGooglePlay size="24" />
+                  </a>
+                  <a
+                    href="https://apps.apple.com/us/app/amazing-note/id6756544285"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Open Amazing Note on App Store"
+                  >
+                    <FaAppStore size="24" />
                   </a>
                 </div>
               </div>
