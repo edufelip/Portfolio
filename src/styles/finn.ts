@@ -90,6 +90,20 @@ export const FinnDetails = styled.div`
           }
         }
       }
+      .policy_link {
+        width: 80%;
+        padding: 0 0 0 40px;
+        margin: 16px auto 0 auto;
+        a {
+          color: #c7c7c7;
+          font-size: 14px;
+          text-decoration: underline;
+          transition: color 0.2s ease;
+          &:hover {
+            color: #ffffff;
+          }
+        }
+      }
       .tags {
         display: block;
         width: 80%;
@@ -139,6 +153,11 @@ export const FinnDetails = styled.div`
         .btn_container_title,
         .btn_container {
           margin-top: 20px;
+        }
+        .policy_link {
+          width: 90%;
+          margin: 12px auto 0 auto;
+          padding: 0 5px;
         }
       }
     }

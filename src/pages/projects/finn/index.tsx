@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import type { GetStaticProps, NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useEffect } from 'react'
@@ -153,6 +154,11 @@ const Finn: NextPage = () => {
                     <FaGooglePlay size="24" />
                   </a>
                 </div>
+                <p className="policy_link">
+                  <Link href="/projects/finn/child_safety" legacyBehavior>
+                    <a>Child Safety Standards (CSAE)</a>
+                  </Link>
+                </p>
               </div>
             </div>
           </FinnDetails>
