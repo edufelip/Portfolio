@@ -159,6 +159,11 @@ const Finn: NextPage = () => {
                     <a>Child Safety Standards (CSAE)</a>
                   </Link>
                 </p>
+                <p className="policy_link">
+                  <Link href="/projects/finn/privacy_policy" legacyBehavior>
+                    <a>Privacy Policy</a>
+                  </Link>
+                </p>
               </div>
             </div>
           </FinnDetails>
