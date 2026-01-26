@@ -184,6 +184,11 @@ const LiveChat: NextPage = () => {
                     <a>Terms of Service</a>
                   </Link>
                 </p>
+                <p className="policy_link">
+                  <Link href="/projects/live-chat/support" legacyBehavior>
+                    <a>Support</a>
+                  </Link>
+                </p>
               </div>
             </div>
           </FinnDetails>
