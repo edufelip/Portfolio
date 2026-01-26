@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import React, { type ReactNode } from 'react'
+import { type ReactNode } from 'react'
 
 import { FaAngleLeft } from '~/components/icons'
 import { MobileMenu } from '~/components/MobileMenu'

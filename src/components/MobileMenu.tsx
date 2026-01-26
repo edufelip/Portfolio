@@ -1,4 +1,4 @@
-import React, { useState, type ReactNode } from 'react'
+import { useState, type ReactNode } from 'react'
 
 import { GiHamburgerMenu, RiCloseLine } from '~/components/icons'
 import { MobileMenu as MobileMenuContainer } from '~/styles/home'
