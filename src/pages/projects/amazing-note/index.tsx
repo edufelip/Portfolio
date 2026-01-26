@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import type { GetStaticProps, NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useEffect } from 'react'
@@ -145,6 +146,16 @@ const AmazingNote: NextPage = () => {
                     <FaAppStore size="24" />
                   </a>
                 </div>
+                <p className="policy_link">
+                  <Link href="/projects/amazing-note/privacy_policy" legacyBehavior>
+                    <a>Privacy Policy</a>
+                  </Link>
+                </p>
+                <p className="policy_link">
+                  <Link href="/projects/amazing-note/support" legacyBehavior>
+                    <a>Support</a>
+                  </Link>
+                </p>
               </div>
             </div>
           </FinnDetails>

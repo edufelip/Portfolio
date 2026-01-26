@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import type { GetStaticProps, NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useEffect } from 'react'
@@ -135,6 +136,26 @@ const Meer: NextPage = () => {
                     <FaGithub size="24" />
                   </a>
                 </div>
+                <p className="policy_link">
+                  <Link href="/projects/meer/child_safety" legacyBehavior>
+                    <a>Child Safety Standards (CSAE)</a>
+                  </Link>
+                </p>
+                <p className="policy_link">
+                  <Link href="/projects/meer/privacy_policy" legacyBehavior>
+                    <a>Privacy Policy</a>
+                  </Link>
+                </p>
+                <p className="policy_link">
+                  <Link href="/projects/meer/data_deletion" legacyBehavior>
+                    <a>Account & Data Deletion</a>
+                  </Link>
+                </p>
+                <p className="policy_link">
+                  <Link href="/projects/meer/support" legacyBehavior>
+                    <a>Support</a>
+                  </Link>
+                </p>
               </div>
             </div>
           </FinnDetails>

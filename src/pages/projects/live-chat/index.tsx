@@ -174,6 +174,16 @@ const LiveChat: NextPage = () => {
                     <FaGithub size="24" />
                   </a>
                 </div>
+                <p className="policy_link">
+                  <Link href="/projects/live-chat/privacy_policy" legacyBehavior>
+                    <a>Privacy Policy</a>
+                  </Link>
+                </p>
+                <p className="policy_link">
+                  <Link href="/projects/live-chat/terms_of_service" legacyBehavior>
+                    <a>Terms of Service</a>
+                  </Link>
+                </p>
               </div>
             </div>
           </FinnDetails>

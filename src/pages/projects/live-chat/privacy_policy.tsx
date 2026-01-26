@@ -4,14 +4,14 @@ import Head from 'next/head'
 import { PrivacyPolicyBody } from '~/styles/privacy_policy'
 import { SupportBody, SupportCard, SupportPage } from '~/styles/support'
 
-const AmazingNotePrivacyPolicy: NextPage = () => {
+const LiveChatPrivacyPolicy: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Eduardo Santos - Amazing Note Privacy Policy</title>
+        <title>Eduardo Santos - LiveChat Privacy Policy</title>
         <meta
           name="description"
-          content="Privacy policy outlining data practices for the Amazing Note application, including information about third-party services and user rights."
+          content="Privacy policy outlining data practices for the LiveChat application, including information about third-party services and user rights."
         />
         <link rel="icon" href="/icon.ico" />
       </Head>
@@ -21,27 +21,42 @@ const AmazingNotePrivacyPolicy: NextPage = () => {
             <PrivacyPolicyBody className="support_body">
               <h1>Privacy Policy</h1>
               <p>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Eduardo Felipe Ribeiro dos Santos built the{' '}
-                <b>Amazing Note</b> app as an Open Source app. This SERVICE is provided by Eduardo
-                Felipe Ribeiro dos Santos at no cost and is intended for use as is. This page is
-                used to inform visitors regarding my policies with the collection, use, and
-                disclosure of Personal Information if anyone decided to use my Service. If you
-                choose to use my Service, then you agree to the collection and use of information in
-                relation to this policy. The Personal Information that I collect is used for
-                providing and improving the Service. I will not use or share your information with
-                anyone except as described in this Privacy Policy. The terms used in this Privacy
-                Policy have the same meanings as in our Terms and Conditions, which are accessible
-                at Amazing Note unless otherwise defined in this Privacy Policy.
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Eduardo Santos built the <b>LiveChat</b> app as an
+                Open Source app. This SERVICE is provided by Eduardo Santos at no cost and is
+                intended for use as is. This page is used to inform visitors regarding my policies
+                with the collection, use, and disclosure of Personal Information if anyone decided
+                to use my Service. If you choose to use my Service, then you agree to the collection
+                and use of information in relation to this policy. The Personal Information that I
+                collect is used for providing and improving the Service. I will not use or share
+                your information with anyone except as described in this Privacy Policy. The terms
+                used in this Privacy Policy have the same meanings as in our Terms and Conditions,
+                which are accessible at LiveChat unless otherwise defined in this Privacy Policy.
               </p>
               <h2>Information Collection and Use</h2>
               <div className="bulletContainer">
                 <p>
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For a better experience, while using our Service, I
-                  may require you to provide us with certain personally identifiable information.
-                  The information that I request will be retained on your device and is not
-                  collected by me in any way. The app does use third-party services that may collect
-                  information used to identify you. Link to the privacy policy of third-party
-                  service providers used by the app
+                  may require you to provide us with certain personally identifiable information,
+                  including but not limited to phone number, display name, email address (optional),
+                  profile photo, and contacts if you choose to sync them. This information is used
+                  to create and manage your account, help you find people you know, and deliver chat
+                  features.
+                </p>
+                <p>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Service also processes user content such as
+                  messages, attachments, and audio recordings that you choose to send. This content
+                  is stored on your device and on servers used to operate the Service.
+                </p>
+                <p>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If you choose to share media, the app may request
+                  access to your camera, photo library, and microphone to capture or upload content.
+                  Granting these permissions is optional, and you can manage them in your device
+                  settings.
+                </p>
+                <p>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The app does use third-party services that may
+                  collect information used to identify you. Link to the privacy policy of
+                  third-party service providers used by the app
                 </p>
                 <ul>
                   <li>
@@ -55,20 +70,47 @@ const AmazingNotePrivacyPolicy: NextPage = () => {
                   </li>
                   <li>
                     <a
+                      href="https://firebase.google.com/support/privacy"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Firebase Authentication
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://firebase.google.com/support/privacy"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Firebase Firestore
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://firebase.google.com/support/privacy"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Firebase Cloud Functions
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://firebase.google.com/support/privacy"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Firebase Cloud Storage
+                    </a>
+                  </li>
+                  <li>
+                    <a
                       href="https://firebase.google.com/policies/analytics"
                       target="_blank"
                       rel="noreferrer"
                     >
                       Google Analytics for Firebase
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://firebase.google.com/support/privacy/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Firebase Crashlytics
                     </a>
                   </li>
                 </ul>
@@ -78,20 +120,21 @@ const AmazingNotePrivacyPolicy: NextPage = () => {
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I want to inform you that whenever you use my Service,
                 in a case of an error in the app I collect data and information (through third-party
                 products) on your phone called Log Data. This Log Data may include information such
-                as your device Internet Protocol (“IP”) address, device name, operating system
-                version, the configuration of the app when utilizing my Service, the time and date
-                of your use of the Service, and other statistics.
+                as your device Internet Protocol (&quot;IP&quot;) address, device name, operating
+                system version, the configuration of the app when utilizing my Service, the time and
+                date of your use of the Service, and other statistics.
               </p>
               <h2>Cookies</h2>
               <p>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cookies are files with a small amount of data that are
                 commonly used as anonymous unique identifiers. These are sent to your browser from
                 the websites that you visit and are stored on your device&#39;s internal memory.
-                This Service does not use these “cookies” explicitly. However, the app may use
-                third-party code and libraries that use “cookies” to collect information and improve
-                their services. You have the option to either accept or refuse these cookies and
-                know when a cookie is being sent to your device. If you choose to refuse our
-                cookies, you may not be able to use some portions of this Service.
+                This Service does not use these &quot;cookies&quot; explicitly. However, the app may
+                use third-party code and libraries that use &quot;cookies&quot; to collect
+                information and improve their services. You have the option to either accept or
+                refuse these cookies and know when a cookie is being sent to your device. If you
+                choose to refuse our cookies, you may not be able to use some portions of this
+                Service.
               </p>
               <h2>Service Providers</h2>
               <div className="bulletContainer">
@@ -143,7 +186,7 @@ const AmazingNotePrivacyPolicy: NextPage = () => {
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I may update our Privacy Policy from time to time.
                 Thus, you are advised to review this page periodically for any changes. I will
                 notify you of any changes by posting the new Privacy Policy on this page. This
-                policy is effective as of 2023-06-22
+                policy is effective as of 2026-01-06
               </p>
               <h2>Contact Us</h2>
               <p>
@@ -158,4 +201,4 @@ const AmazingNotePrivacyPolicy: NextPage = () => {
   )
 }
 
-export default AmazingNotePrivacyPolicy
+export default LiveChatPrivacyPolicy
