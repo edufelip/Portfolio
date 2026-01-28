@@ -169,6 +169,11 @@ const Finn: NextPage = () => {
                     <a>Account & Data Deletion</a>
                   </Link>
                 </p>
+                <p className="policy_link">
+                  <Link href="/projects/finn/terms_eula" legacyBehavior>
+                    <a>Terms & EULA</a>
+                  </Link>
+                </p>
               </div>
             </div>
           </FinnDetails>
