@@ -30,7 +30,6 @@
     "babel-plugin-styled-components": "^1.10.7",
     "browserslist": "^4.16.5",
     "cheerio": "1.0.0-rc.12",
-    "elliptic": "^6.5.4",
     "false": "0.0.4",
     "fast-xml-parser": "4.1.2",
     "firebase": "^12.8.0",
