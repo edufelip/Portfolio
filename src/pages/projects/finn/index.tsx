@@ -54,7 +54,7 @@ const Finn: NextPage = () => {
         <title>Eduardo Santos - Finn</title>
         <meta
           name="description"
-          content="Finn is a Kotlin social network built with Compose Multiplatform, Firebase, and clean architecture. Learn about tech stack, features, and links to source and releases."
+          content="Finn is a React Native social network built with Expo and Supabase, delivering iOS and Android experiences from a shared TypeScript codebase."
         />
         <link rel="icon" href="/icon.ico" />
       </Head>
@@ -83,21 +83,21 @@ const Finn: NextPage = () => {
               <div className="project_spec_container">
                 <h1>Finn</h1>
                 <div>
-                  <h5>Kotlin</h5>
-                  <Image src="/kotlin_icon.png" alt="Kotlin Icon" width={18} height={18} />
-                  <h5>Compose Multiplatform</h5>
+                  <h5>TypeScript</h5>
+                  <Image src="/typescript_icon.png" alt="TypeScript Icon" width={18} height={18} />
+                  <h5>React Native</h5>
                   <Image
                     className="android_icon"
-                    src="/jetpack_compose_icon.png"
-                    alt="Compose Icon"
+                    src="/react_icon.png"
+                    alt="React Native Icon"
                     width={22}
                     height={22}
                   />
-                  <h5>Android</h5>
+                  <h5>Expo</h5>
                   <Image
                     className="android_icon"
-                    src="/android_icon.png"
-                    alt="Android Icon"
+                    src="/expo_icon.svg"
+                    alt="Expo Icon"
                     width={22}
                     height={22}
                   />
@@ -114,23 +114,19 @@ const Finn: NextPage = () => {
                     <b>Tags</b>
                   </p>
                   <div className="tags_container">
-                    <p>Jetpack Compose Multiplatform</p>
-                    <p>Coroutines</p>
-                    <p>Flow</p>
-                    <p>Clean Architecture</p>
-                    <p>Hilt</p>
-                    <p>Retrofit</p>
-                    <p>OkHttp</p>
-                    <p>SQLDelight</p>
-                    <p>Firebase Auth</p>
-                    <p>Remote Config</p>
-                    <p>Firebase Cloud Messaging</p>
-                    <p>Navigation Compose</p>
-                    <p>Coil</p>
-                    <p>Kamel</p>
-                    <p>ktlint</p>
-                    <p>detekt</p>
-                    <p>GitHub Actions CI</p>
+                    <p>React Native</p>
+                    <p>Expo</p>
+                    <p>TypeScript</p>
+                    <p>Supabase</p>
+                    <p>React Navigation</p>
+                    <p>Expo Auth Session</p>
+                    <p>Apple Sign-In</p>
+                    <p>Firebase Crashlytics</p>
+                    <p>Offline Caching</p>
+                    <p>SQLite</p>
+                    <p>Zustand</p>
+                    <p>Maestro E2E</p>
+                    <p>Jest</p>
                   </div>
                 </div>
                 <p className="btn_container_title">
@@ -171,7 +167,7 @@ const Finn: NextPage = () => {
                 </p>
                 <p className="policy_link">
                   <Link href="/projects/finn/terms_eula" legacyBehavior>
-                    <a>Terms & EULA</a>
+                    <a>Terms & EULA (no tolerance for objectionable content or abusive users)</a>
                   </Link>
                 </p>
               </div>

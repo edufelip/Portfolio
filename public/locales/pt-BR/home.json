@@ -27,10 +27,6 @@
         "title": "Finn",
         "description": "Mídia Social baseada em Fóruns"
       },
-      "finnBackend": {
-        "title": "Finn Backend",
-        "description": "Backend para o app Finn"
-      },
       "meerBackend": {
         "title": "Meer Backend",
         "description": "API do Meer feita em Java com Spring Boot"

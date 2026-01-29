@@ -44,7 +44,6 @@ type HomeProjectsContent = {
   livechat: ProjectCardContent
   amazingNote: ProjectCardContent
   finn: ProjectCardContent
-  finnBackend: ProjectCardContent
   meerBackend: ProjectCardContent
 }
 
@@ -391,35 +390,6 @@ const Home: NextPage<HomeProps> = ({ articles }) => {
                     aria-label="Open Finn on Google Play"
                   >
                     <FaGooglePlay size="24" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </Project>
-          <Project className="finn-backend" background="/finnbackend-bg.svg">
-            <div className="shadow">
-              <div className="wrap">
-                <h2>{projectsContent.finnBackend.title}</h2>
-                <p>{projectsContent.finnBackend.description}</p>
-                <div>
-                  <Link
-                    scroll={false}
-                    href="/projects/finn-backend"
-                    className="projectAnchor"
-                    onClick={() =>
-                      analytics.logSelectContent('project_btn', 'details_finn_backend')
-                    }
-                  >
-                    {tCommon('cta.access')}
-                  </Link>
-                  <a
-                    href="https://github.com/edufelip/finn__backend"
-                    target="_blank"
-                    onClick={() => analytics.logSelectContent('project_btn', 'github_finn_backend')}
-                    rel="noreferrer"
-                    aria-label="View Finn Backend source on GitHub"
-                  >
-                    <FaGithub size="24" />
                   </a>
                 </div>
               </div>
