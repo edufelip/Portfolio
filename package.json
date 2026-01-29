@@ -36,7 +36,7 @@
     "firebase": "^12.8.0",
     "framer-motion": "^12.23.12",
     "i18next": "^25.5.2",
-    "next": "^16.1.4",
+    "next": "^16.1.5",
     "next-i18next": "^15.4.3",
     "polished": "^3.6.5",
     "postcss": "^8.4.35",
