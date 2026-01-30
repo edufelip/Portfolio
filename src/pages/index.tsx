@@ -273,7 +273,7 @@ const Home: NextPage<HomeProps> = ({ articles }) => {
               </div>
             </div>
           </Project>
-          <Project className="live-chat" background="/livechat-bg.svg">
+          <Project className="live-chat" background="/livechat-bg.png">
             <div className="shadow">
               <div className="wrap">
                 <h2>{projectsContent.livechat.title}</h2>

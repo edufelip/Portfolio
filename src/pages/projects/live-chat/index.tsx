@@ -62,7 +62,7 @@ const LiveChat: NextPage = () => {
         <MainPageFace>
           <HeroBackground>
             <Image
-              src="/livechat-bg.svg"
+              src="/livechat-bg-sm.png"
               alt="LiveChat project background"
               fill
               sizes="100vw"
