@@ -173,6 +173,9 @@ export const MainContent = styled.div`
       a {
         width: 250px;
         background-color: #881111;
+        border-radius: 10px;
+        display: block;
+        margin: 0 auto;
         padding: 10px 12px;
         font-size: 15px;
         transition: background 0.3s ease;
