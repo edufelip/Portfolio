@@ -391,6 +391,15 @@ const Home: NextPage<HomeProps> = ({ articles }) => {
                   >
                     <FaGooglePlay size="24" />
                   </a>
+                  <a
+                    href="https://apps.apple.com/us/app/finn-social/id6757938889"
+                    target="_blank"
+                    onClick={() => analytics.logSelectContent('project_btn', 'appstore_finn')}
+                    rel="noreferrer"
+                    aria-label="Open Finn on App Store"
+                  >
+                    <FaAppStore size="24" />
+                  </a>
                 </div>
               </div>
             </div>
