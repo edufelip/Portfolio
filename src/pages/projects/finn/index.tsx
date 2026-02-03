@@ -8,7 +8,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useEffect } from 'react'
 
 import Header from '~/components/Header'
-import { FaGithub, FaGooglePlay } from '~/components/icons'
+import { FaGithub, FaGooglePlay, FaAppStore } from '~/components/icons'
 import { FinnDetails } from '~/styles/finn'
 import { MainPageFace, ContactSection, HeroBackground } from '~/styles/home'
 import { getResumeContent } from '~/utils/i18n/resume'
@@ -130,7 +130,7 @@ const Finn: NextPage = () => {
                   </div>
                 </div>
                 <p className="btn_container_title">
-                  <b>Github - Playstore</b>
+                  <b>Github - Playstore - Appstore</b>
                 </p>
                 <div className="btn_container">
                   <a
@@ -148,6 +148,14 @@ const Finn: NextPage = () => {
                     aria-label="Open Finn on Google Play"
                   >
                     <FaGooglePlay size="24" />
+                  </a>
+                  <a
+                    href="https://apps.apple.com/us/app/finn-social/id6757938889"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Open Finn on App Store"
+                  >
+                    <FaAppStore size="24" />
                   </a>
                 </div>
                 <p className="policy_link">
