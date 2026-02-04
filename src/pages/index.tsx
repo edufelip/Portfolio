@@ -269,6 +269,15 @@ const Home: NextPage<HomeProps> = ({ articles }) => {
                   >
                     <FaGithub size="24" />
                   </a>
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.edufelip.meer"
+                    target="_blank"
+                    onClick={() => analytics.logSelectContent('project_btn', 'playstore_meer')}
+                    rel="noreferrer"
+                    aria-label="Open Meer on Google Play"
+                  >
+                    <FaGooglePlay size="24" />
+                  </a>
                 </div>
               </div>
             </div>

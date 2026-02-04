@@ -8,7 +8,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useEffect } from 'react'
 
 import Header from '~/components/Header'
-import { FaGithub } from '~/components/icons'
+import { FaGithub, FaGooglePlay } from '~/components/icons'
 import { FinnDetails } from '~/styles/finn'
 import { MainPageFace, ContactSection, HeroBackground } from '~/styles/home'
 import { getResumeContent } from '~/utils/i18n/resume'
@@ -134,6 +134,14 @@ const Meer: NextPage = () => {
                     aria-label="View Meer source on GitHub"
                   >
                     <FaGithub size="24" />
+                  </a>
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.edufelip.meer"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Open Meer on Google Play"
+                  >
+                    <FaGooglePlay size="24" />
                   </a>
                 </div>
                 <p className="policy_link">
