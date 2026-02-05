@@ -37,6 +37,7 @@ type ProjectCardContent = {
   title: string
   description: string
   status?: string
+  disclaimer?: string
 }
 
 type HomeProjectsContent = {
@@ -251,6 +252,11 @@ const Home: NextPage<HomeProps> = ({ articles }) => {
               <div className="wrap">
                 <h2>{projectsContent.meer.title}</h2>
                 <p>{projectsContent.meer.description}</p>
+                {projectsContent.meer.disclaimer && (
+                  <p className="disclaimer">
+                    <small>{projectsContent.meer.disclaimer}</small>
+                  </p>
+                )}
                 <div>
                   <Link
                     scroll={false}
@@ -277,6 +283,15 @@ const Home: NextPage<HomeProps> = ({ articles }) => {
                     aria-label="Open Meer on Google Play"
                   >
                     <FaGooglePlay size="24" />
+                  </a>
+                  <a
+                    href="https://apps.apple.com/br/app/guia-brech%C3%B3/id6756424043"
+                    target="_blank"
+                    onClick={() => analytics.logSelectContent('project_btn', 'appstore_meer')}
+                    rel="noreferrer"
+                    aria-label="Open Meer on App Store"
+                  >
+                    <FaAppStore size="24" />
                   </a>
                 </div>
               </div>

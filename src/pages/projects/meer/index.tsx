@@ -8,7 +8,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useEffect } from 'react'
 
 import Header from '~/components/Header'
-import { FaGithub, FaGooglePlay } from '~/components/icons'
+import { FaGithub, FaGooglePlay, FaAppStore } from '~/components/icons'
 import { FinnDetails } from '~/styles/finn'
 import { MainPageFace, ContactSection, HeroBackground } from '~/styles/home'
 import { getResumeContent } from '~/utils/i18n/resume'
@@ -51,7 +51,7 @@ const Meer: NextPage = () => {
   return (
     <motion.div exit={{ opacity: 0 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
       <Head>
-        <title>Eduardo Santos - Meer</title>
+        <title>Eduardo Santos - Meer (GuiaBrechó)</title>
         <meta
           name="description"
           content="Meer is a React Native app built with Expo that helps people discover thrift stores with a map and list experience powered by the Meer API."
@@ -81,7 +81,7 @@ const Meer: NextPage = () => {
           <FinnDetails>
             <div className="project_spec">
               <div className="project_spec_container">
-                <h1>Meer</h1>
+                <h1>Meer (GuiaBrechó)</h1>
                 <div>
                   <h5>TypeScript</h5>
                   <Image src="/typescript_icon.png" alt="TypeScript Icon" width={18} height={18} />
@@ -124,7 +124,7 @@ const Meer: NextPage = () => {
                   </div>
                 </div>
                 <p className="btn_container_title">
-                  <b>Github</b>
+                  <b>Github - Playstore - Appstore</b>
                 </p>
                 <div className="btn_container">
                   <a
@@ -143,7 +143,18 @@ const Meer: NextPage = () => {
                   >
                     <FaGooglePlay size="24" />
                   </a>
+                  <a
+                    href="https://apps.apple.com/br/app/guia-brech%C3%B3/id6756424043"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Open Meer on App Store"
+                  >
+                    <FaAppStore size="24" />
+                  </a>
                 </div>
+                <p className="disclaimer">
+                  <small>{t('disclaimer')}</small>
+                </p>
                 <p className="policy_link">
                   <Link href="/projects/meer/child_safety" legacyBehavior>
                     <a>Child Safety Standards (CSAE)</a>

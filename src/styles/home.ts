@@ -553,6 +553,11 @@ export const Project = styled.div<{ background?: string }>`
         font-weight: 300;
         margin: -10px 0 15px 0;
       }
+      p.disclaimer {
+        font-size: 13px;
+        opacity: 0.7;
+        margin: -10px 0 10px 0;
+      }
       div {
         display: flex;
         justify-content: space-between;

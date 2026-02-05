@@ -104,6 +104,14 @@ export const FinnDetails = styled.div`
           }
         }
       }
+      .disclaimer {
+        width: 80%;
+        padding: 0 0 0 40px;
+        margin: 8px auto 0 auto;
+        color: #a0a0a0;
+        font-size: 13px;
+        font-style: italic;
+      }
       .tags {
         display: block;
         width: 80%;
@@ -157,6 +165,11 @@ export const FinnDetails = styled.div`
         .policy_link {
           width: 90%;
           margin: 12px auto 0 auto;
+          padding: 0 5px;
+        }
+        .disclaimer {
+          width: 90%;
+          margin: 8px auto 0 auto;
           padding: 0 5px;
         }
       }
