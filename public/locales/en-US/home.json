@@ -11,8 +11,9 @@
     "title": "Latest Projects",
     "cards": {
       "meer": {
-        "title": "Meer",
-        "description": "A guide for finding thrift stores"
+        "title": "Meer (GuiaBrechó)",
+        "description": "A guide for finding thrift stores",
+        "disclaimer": "Available only in Brazil"
       },
       "livechat": {
         "title": "LiveChat",

@@ -11,8 +11,9 @@
     "title": "Últimos Projetos",
     "cards": {
       "meer": {
-        "title": "Meer",
-        "description": "Um guia para encontrar brechós"
+        "title": "Meer (GuiaBrechó)",
+        "description": "Um guia para encontrar brechós",
+        "disclaimer": "Disponível apenas no Brasil"
       },
       "livechat": {
         "title": "LiveChat",
