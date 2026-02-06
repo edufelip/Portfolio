@@ -611,6 +611,19 @@ export const Project = styled.div<{ background?: string }>`
     }
   }
 
+  &.meer {
+    .shadow {
+      .wrap {
+        h2 {
+          line-height: 1.1;
+        }
+        p:not(.disclaimer) {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
   @media (max-width: 780px) {
     width: 90%;
   }
