@@ -31,7 +31,7 @@
     "browserslist": "^4.16.5",
     "cheerio": "1.0.0-rc.12",
     "false": "0.0.4",
-    "fast-xml-parser": "4.1.2",
+    "fast-xml-parser": "4.5.4",
     "firebase": "^12.8.0",
     "framer-motion": "^12.23.12",
     "i18next": "^25.5.2",
