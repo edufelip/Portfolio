@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useEffect } from 'react'
-import styled from 'styled-components'
+import { styled } from 'styled-components'
 
 import { FaAngleLeft } from '~/components/icons'
 import { ContactSection, HeroBackground, MainPageFace } from '~/styles/home'

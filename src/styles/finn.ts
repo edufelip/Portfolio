@@ -1,5 +1,5 @@
 import { lighten } from 'polished'
-import styled from 'styled-components'
+import { styled } from 'styled-components'
 
 export const FinnDetails = styled.div`
   width: 100%;

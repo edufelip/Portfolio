@@ -1,0 +1,9 @@
+{
+  "sections": {
+    "about": "Sobre"
+  },
+  "paragraphs": {
+    "one": "MyChampions é uma plataforma fitness em React Native com assinatura, que conecta dois perfis de usuário em um único aplicativo: alunos que acompanham nutrição e treino diariamente, e profissionais (nutricionistas e personal trainers) que gerenciam carteiras de alunos, criam bibliotecas reutilizáveis de planos alimentares e de treino e monitoram a adesão por um dashboard dedicado.",
+    "two": "Construído com Expo e TypeScript, o app conta com análise de refeições por foto via IA (Firebase Cloud Functions + OpenAI), arquitetura offline-first com indicadores de dados desatualizados, autenticação multi-provedor (e-mail, Google, Apple Sign-In), gerenciamento de assinaturas e paywalls com RevenueCat, microsserviço de busca de alimentos e compartilhamento de receitas via deep links. Testes E2E com Detox; testes unitários com Jest."
+  }
+}

@@ -41,6 +41,7 @@ type ProjectCardContent = {
 }
 
 type HomeProjectsContent = {
+  myChampions: ProjectCardContent
   meer: ProjectCardContent
   livechat: ProjectCardContent
   amazingNote: ProjectCardContent
@@ -247,6 +248,35 @@ const Home: NextPage<HomeProps> = ({ articles }) => {
         </AboutSection>
         <ProjectsSection id="projects">
           <h2>{t('projects.title')}</h2>
+          <Project className="my-champions" background="/mychampions-bg.png">
+            <div className="shadow">
+              <div className="wrap">
+                <h2>{projectsContent.myChampions.title}</h2>
+                <p>{projectsContent.myChampions.description}</p>
+                <div>
+                  <Link
+                    scroll={false}
+                    href="/projects/my-champions"
+                    className="projectAnchor"
+                    onClick={() =>
+                      analytics.logSelectContent('project_btn', 'details_my_champions')
+                    }
+                  >
+                    {tCommon('cta.access')}
+                  </Link>
+                  <a
+                    href="https://github.com/edufelip/MyChampions"
+                    target="_blank"
+                    onClick={() => analytics.logSelectContent('project_btn', 'github_my_champions')}
+                    rel="noreferrer"
+                    aria-label="View MyChampions source on GitHub"
+                  >
+                    <FaGithub size="24" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </Project>
           <Project className="meer" background="/meer-bg.png">
             <div className="shadow">
               <div className="wrap">

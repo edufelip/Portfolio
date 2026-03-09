@@ -1,0 +1,9 @@
+{
+  "sections": {
+    "about": "About"
+  },
+  "paragraphs": {
+    "one": "MyChampions is a subscription-based React Native fitness platform connecting two user roles on a single app: students who track nutrition and training daily, and professionals (nutritionists and personal trainers) who manage student rosters, author reusable meal and workout plan libraries, and monitor adherence from a dedicated dashboard.",
+    "two": "Built with Expo and TypeScript, the app features AI-powered meal photo analysis via Firebase Cloud Functions and OpenAI, offline-first architecture with stale-data indicators, multi-provider auth (email, Google, Apple Sign-In), RevenueCat subscription and paywall management, a custom food-search microservice, and recipe sharing via deep links. E2E tests run with Detox; unit tests with Jest."
+  }
+}

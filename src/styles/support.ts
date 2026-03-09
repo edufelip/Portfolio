@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import { styled } from 'styled-components'
 
 export const SupportPage = styled.main`
   --support-ink: #0f172a;

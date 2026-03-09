@@ -10,6 +10,10 @@
   "projects": {
     "title": "Últimos Projetos",
     "cards": {
+      "myChampions": {
+        "title": "MyChampions",
+        "description": "Uma plataforma fitness que conecta atletas com nutricionistas e personal trainers"
+      },
       "meer": {
         "title": "Meer (GuiaBrechó)",
         "description": "Um guia para encontrar brechós",
