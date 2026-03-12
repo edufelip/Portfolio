@@ -30,7 +30,6 @@ import {
   ArticlesEmpty,
   ArticlesCTAWrapper,
 } from '~/styles/home'
-import { getResumeContent } from '~/utils/i18n/resume'
 import { fetchMediumArticles, MediumArticle } from '~/utils/medium-articles'
 
 type ProjectCardContent = {
@@ -138,25 +137,6 @@ const Home: NextPage<HomeProps> = ({ articles }) => {
     }
   }, [])
 
-  const resumeContent = getResumeContent(tCommon)
-  const resumeAnalyticsKey = i18n.language === 'pt-BR' ? 'resume_br' : 'resume_us'
-
-  const renderResumeLink = (isMobile?: boolean) => (
-    <a
-      href={resumeContent.href}
-      target="_blank"
-      rel="noreferrer"
-      onClick={() =>
-        analytics.logSelectContent(
-          isMobile === true ? 'header_btn_mobile' : 'header_btn',
-          resumeAnalyticsKey
-        )
-      }
-    >
-      {resumeContent.label}
-    </a>
-  )
-
   const projectsContent = t('projects.cards', {
     returnObjects: true,
   }) as HomeProjectsContent
@@ -169,7 +149,7 @@ const Home: NextPage<HomeProps> = ({ articles }) => {
         <title>Eduardo Santos</title>
         <meta
           name="description"
-          content="Eduardo Santos is an Android engineer showcasing cross-platform projects, backend services, and contact links. Explore recent apps, resumes, and ways to connect."
+          content="Eduardo Santos is an Android engineer showcasing cross-platform projects, backend services, and contact links. Explore recent apps and ways to connect."
         />
         <link rel="icon" href="/icon.ico" />
       </Head>
@@ -182,7 +162,6 @@ const Home: NextPage<HomeProps> = ({ articles }) => {
             about={tCommon('nav.about')}
             projects={tCommon('nav.projects')}
             contact={tCommon('nav.contact')}
-            renderResumeLink={renderResumeLink}
             onAboutClick={() => analytics.logSelectContent('header_btn', 'about_me')}
             onProjectsClick={() => analytics.logSelectContent('header_btn', 'projects')}
             onContactClick={() => analytics.logSelectContent('header_btn', 'contact')}

@@ -11,7 +11,6 @@ import { BsArrowLeft, FaAngleLeft, FaGithub } from '~/components/icons'
 import { MobileMenu } from '~/components/MobileMenu'
 import { FinnDetails } from '~/styles/finn'
 import { MainPageFace, ContactSection, HeroBackground } from '~/styles/home'
-import { getResumeContent } from '~/utils/i18n/resume'
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   return {
@@ -41,12 +40,6 @@ const LiveChat: NextPage = () => {
 
   const { t: tCommon } = useTranslation('common')
   const { t } = useTranslation('live-chat')
-  const resumeContent = getResumeContent(tCommon)
-  const resumeLink = (
-    <a href={resumeContent.href} target="_blank" rel="noreferrer">
-      {resumeContent.label}
-    </a>
-  )
 
   return (
     <motion.div exit={{ opacity: 0 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
@@ -85,9 +78,6 @@ const LiveChat: NextPage = () => {
                   {tCommon('nav.blog')}
                 </a>
               </li>
-              <li>
-                <span>{resumeLink}</span>
-              </li>
             </ul>
             <Link href="/" className="backMenuBtnLink">
               <FaAngleLeft className="backMenuBtn" size={36} />
@@ -106,9 +96,6 @@ const LiveChat: NextPage = () => {
                 <a href="https://medium.com/@eduardofelipi" target="_blank" rel="noreferrer">
                   {tCommon('nav.blog')}
                 </a>
-              </li>
-              <li>
-                <span>{resumeLink}</span>
               </li>
             </MobileMenu>
           </div>

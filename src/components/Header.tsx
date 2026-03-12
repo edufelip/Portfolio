@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { type ReactNode } from 'react'
 
 import { FaAngleLeft } from '~/components/icons'
 import { MobileMenu } from '~/components/MobileMenu'
@@ -8,7 +7,6 @@ type Props = {
   about: string
   projects: string
   contact: string
-  renderResumeLink: (isMobile?: boolean) => ReactNode
   backLabel?: string
   backHref?: string
   onAboutClick?: () => void
@@ -21,7 +19,6 @@ export default function Header({
   about,
   projects,
   contact,
-  renderResumeLink,
   backLabel,
   backHref,
   onAboutClick,
@@ -64,9 +61,6 @@ export default function Header({
             Blog
           </a>
         </li>
-        <li>
-          <span>{renderResumeLink()}</span>
-        </li>
       </ul>
       <MobileMenu>
         {backLabel && backHref && (
@@ -100,9 +94,6 @@ export default function Header({
           >
             Blog
           </a>
-        </li>
-        <li>
-          <span>{renderResumeLink(true)}</span>
         </li>
       </MobileMenu>
     </div>

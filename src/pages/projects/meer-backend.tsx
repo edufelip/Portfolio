@@ -10,7 +10,6 @@ import Header from '~/components/Header'
 import { FaGithub } from '~/components/icons'
 import { FinnDetails } from '~/styles/finn'
 import { MainPageFace, ContactSection, HeroBackground } from '~/styles/home'
-import { getResumeContent } from '~/utils/i18n/resume'
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   return {
@@ -40,12 +39,6 @@ const MeerBackend: NextPage = () => {
 
   const { t: tCommon } = useTranslation('common')
   const { t } = useTranslation('meer-backend')
-  const resumeContent = getResumeContent(tCommon)
-  const renderResumeLink = () => (
-    <a href={resumeContent.href} target="_blank" rel="noreferrer">
-      {resumeContent.label}
-    </a>
-  )
 
   return (
     <motion.div exit={{ opacity: 0 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
@@ -73,7 +66,6 @@ const MeerBackend: NextPage = () => {
             about={tCommon('nav.about')}
             projects={tCommon('nav.projects')}
             contact={tCommon('nav.contact')}
-            renderResumeLink={renderResumeLink}
             backLabel={tCommon('back')}
             backHref="/"
           />
