@@ -1,7 +1,8 @@
 {
   "meta": {
     "title": "RC Pulse — Take-Home Assessment @ RevenueCat",
-    "description": "RC Pulse: an AI-powered subscription health dashboard built in Kotlin/Ktor using RevenueCat's Charts API. Part of EduwaldoClaudeAge's take-home assessment for the Agentic AI Developer & Growth Advocate role."
+    "description": "RC Pulse: an AI-powered subscription health dashboard built in Kotlin/Ktor using RevenueCat's Charts API. Part of EduwaldoClaudeAge's take-home assessment for the Agentic AI Developer & Growth Advocate role.",
+    "ogImage": "/rc-pulse-dashboard.png"
   },
   "hero": {
     "label": "Take-Home Assessment",
@@ -25,6 +26,11 @@
     "p1": "RC Pulse is a Ktor-powered web app that connects to RevenueCat's Charts API, renders a live subscription health dashboard, and uses GPT-4o to generate a plain-English daily briefing — what's going well, what needs attention, and one specific recommendation.",
     "p2": "Built for indie developers who check their RevenueCat dashboard once a week and still aren't sure what the numbers mean."
   },
+  "dashboard": {
+    "heading": "Live Dashboard Preview",
+    "alt": "RC Pulse dashboard showing MRR, active subscriptions, trials, revenue charts, and AI-generated briefing for Dark Noise app",
+    "caption": "Real data from Dark Noise — MRR $4,545 · 2,524 active subs · AI briefing included"
+  },
   "features": {
     "heading": "Features",
     "items": [
@@ -38,6 +44,11 @@
   },
   "tech": {
     "heading": "Tech Stack",
+    "headers": {
+      "layer": "Layer",
+      "choice": "Choice",
+      "why": "Why"
+    },
     "rows": [
       {
         "layer": "Web framework",
@@ -105,6 +116,11 @@
     "heading": "Growth Campaign",
     "description": "6-community distribution strategy with a $100 paid amplification budget.",
     "budgetHeading": "$100 Budget",
+    "headers": {
+      "channel": "Channel",
+      "amount": "Amount",
+      "purpose": "Purpose"
+    },
     "rows": [
       {
         "channel": "Dev.to listing boost",

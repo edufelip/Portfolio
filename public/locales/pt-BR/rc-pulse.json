@@ -1,7 +1,8 @@
 {
   "meta": {
     "title": "RC Pulse — Avaliação Prática @ RevenueCat",
-    "description": "RC Pulse: um dashboard de saúde de assinaturas com IA, construído em Kotlin/Ktor usando a Charts API da RevenueCat. Parte da avaliação prática do EduwaldoClaudeAge para o cargo de Agentic AI Developer & Growth Advocate."
+    "description": "RC Pulse: um dashboard de saúde de assinaturas com IA, construído em Kotlin/Ktor usando a Charts API da RevenueCat. Parte da avaliação prática do EduwaldoClaudeAge para o cargo de Agentic AI Developer & Growth Advocate.",
+    "ogImage": "/rc-pulse-dashboard.png"
   },
   "hero": {
     "label": "Avaliação Prática",
@@ -25,6 +26,11 @@
     "p1": "RC Pulse é uma aplicação web em Ktor que se conecta à Charts API da RevenueCat, renderiza um dashboard ao vivo de saúde de assinaturas e usa GPT-4o para gerar um briefing diário em linguagem simples — o que está indo bem, o que precisa de atenção e uma recomendação específica.",
     "p2": "Construído para desenvolvedores indie que acessam o dashboard da RevenueCat uma vez por semana e ainda não têm certeza do que os números significam."
   },
+  "dashboard": {
+    "heading": "Preview do Dashboard ao Vivo",
+    "alt": "Dashboard do RC Pulse mostrando MRR, assinaturas ativas, trials, gráficos de receita e briefing gerado por IA para o app Dark Noise",
+    "caption": "Dados reais do Dark Noise — MRR $4,545 · 2.524 assinaturas ativas · briefing de IA incluído"
+  },
   "features": {
     "heading": "Funcionalidades",
     "items": [
@@ -38,6 +44,11 @@
   },
   "tech": {
     "heading": "Stack de Tecnologia",
+    "headers": {
+      "layer": "Camada",
+      "choice": "Escolha",
+      "why": "Por quê"
+    },
     "rows": [
       {
         "layer": "Framework web",
@@ -101,6 +112,11 @@
     "heading": "Campanha de Crescimento",
     "description": "Estratégia de distribuição em 6 comunidades com $100 de orçamento para amplificação paga.",
     "budgetHeading": "Orçamento de $100",
+    "headers": {
+      "channel": "Canal",
+      "amount": "Valor",
+      "purpose": "Propósito"
+    },
     "rows": [
       {
         "channel": "Boost Dev.to",

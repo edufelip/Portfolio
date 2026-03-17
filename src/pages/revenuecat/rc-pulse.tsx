@@ -321,6 +321,29 @@ const InsightLabel = styled.p`
   margin: 0 0 8px;
 `
 
+// ── Dashboard preview ─────────────────────────────────────────────────────────
+
+const DashboardPreview = styled.div`
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+`
+
+const DashboardImage = styled.img`
+  width: 100%;
+  height: auto;
+  display: block;
+`
+
+const DashboardCaption = styled.p`
+  font-size: 13px;
+  color: #666;
+  text-align: center;
+  margin: 12px 0 0;
+  font-style: italic;
+`
+
 // ── Disclosure ────────────────────────────────────────────────────────────────
 
 const Disclosure = styled.div`
@@ -346,11 +369,21 @@ const RcPulsePage: NextPage = () => {
     choice: string
     why: string
   }>
+  const techHeaders = t('tech.headers', { returnObjects: true }) as {
+    layer: string
+    choice: string
+    why: string
+  }
   const budgetRows = t('growth.rows', { returnObjects: true }) as Array<{
     channel: string
     amount: string
     purpose: string
   }>
+  const budgetHeaders = t('growth.headers', { returnObjects: true }) as {
+    channel: string
+    amount: string
+    purpose: string
+  }
 
   useEffect(() => {
     window.scroll({ top: 0 })
@@ -362,6 +395,29 @@ const RcPulsePage: NextPage = () => {
         <title>{t('meta.title')}</title>
         <meta name="description" content={t('meta.description')} />
         <link rel="icon" href="/icon.ico" />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={t('meta.title')} />
+        <meta property="og:description" content={t('meta.description')} />
+        <meta
+          property="og:image"
+          content="https://www.portfolio.eduwaldo.com/rc-pulse-dashboard.png"
+        />
+        <meta property="og:url" content="https://www.portfolio.eduwaldo.com/revenuecat/rc-pulse" />
+        <meta property="og:site_name" content="Eduardo Santos Portfolio" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={t('meta.title')} />
+        <meta name="twitter:description" content={t('meta.description')} />
+        <meta
+          name="twitter:image"
+          content="https://www.portfolio.eduwaldo.com/rc-pulse-dashboard.png"
+        />
+
+        {/* Canonical */}
+        <link rel="canonical" href="https://www.portfolio.eduwaldo.com/revenuecat/rc-pulse" />
       </Head>
 
       <main>
@@ -449,15 +505,28 @@ const RcPulsePage: NextPage = () => {
               </FeatureList>
             </Section>
 
+            {/* ── Dashboard preview ── */}
+            <Section>
+              <SectionHeading>{t('dashboard.heading')}</SectionHeading>
+              <DashboardPreview>
+                <DashboardImage
+                  src="/rc-pulse-dashboard.png"
+                  alt={t('dashboard.alt')}
+                  loading="lazy"
+                />
+              </DashboardPreview>
+              <DashboardCaption>{t('dashboard.caption')}</DashboardCaption>
+            </Section>
+
             {/* ── Tech stack ── */}
             <Section>
               <SectionHeading>{t('tech.heading')}</SectionHeading>
               <Table>
                 <thead>
                   <tr>
-                    <th>Layer</th>
-                    <th>Choice</th>
-                    <th>Why</th>
+                    <th>{techHeaders.layer}</th>
+                    <th>{techHeaders.choice}</th>
+                    <th>{techHeaders.why}</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -518,9 +587,9 @@ const RcPulsePage: NextPage = () => {
               <BudgetTable>
                 <thead>
                   <tr>
-                    <th>Channel</th>
-                    <th>Amount</th>
-                    <th>Purpose</th>
+                    <th>{budgetHeaders.channel}</th>
+                    <th>{budgetHeaders.amount}</th>
+                    <th>{budgetHeaders.purpose}</th>
                   </tr>
                 </thead>
                 <tbody>
