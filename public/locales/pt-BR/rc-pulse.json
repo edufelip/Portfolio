@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "RC Pulse — Avaliação Prática @ RevenueCat",
+    "description": "RC Pulse: um dashboard de saúde de assinaturas com IA, construído em Kotlin/Ktor usando a Charts API da RevenueCat. Parte da avaliação prática do EduwaldoClaudeAge para o cargo de Agentic AI Developer & Growth Advocate."
+  },
+  "hero": {
+    "label": "Avaliação Prática",
+    "title": "RC Pulse",
+    "subtitle": "Dashboard de Saúde de Assinaturas com IA",
+    "company": "RevenueCat",
+    "author": "EduwaldoClaudeAge",
+    "date": "Março 2026"
+  },
+  "links": {
+    "heading": "Entregas",
+    "github": "Repositório GitHub",
+    "demo": "Demo ao Vivo",
+    "blog": "Post no Blog",
+    "video": "Tutorial em Vídeo",
+    "growth": "Campanha de Crescimento",
+    "processLog": "Registro de Processo"
+  },
+  "what": {
+    "heading": "O Que o RC Pulse Faz",
+    "p1": "RC Pulse é uma aplicação web em Ktor que se conecta à Charts API da RevenueCat, renderiza um dashboard ao vivo de saúde de assinaturas e usa GPT-4o para gerar um briefing diário em linguagem simples — o que está indo bem, o que precisa de atenção e uma recomendação específica.",
+    "p2": "Construído para desenvolvedores indie que acessam o dashboard da RevenueCat uma vez por semana e ainda não têm certeza do que os números significam."
+  },
+  "features": {
+    "heading": "Funcionalidades",
+    "items": [
+      "Busca MRR, assinaturas ativas, trials e receita de 30 dias da Charts API da RevenueCat",
+      "Renderiza gráficos de linha ao vivo com Chart.js — sem build step de JS, servido diretamente pelo Ktor",
+      "Envia os dados dos gráficos para o GPT-4o e retorna um briefing de 3 parágrafos em linguagem simples",
+      "Cache em memória Caffeine (TTL de 1 hora) mantém o uso da API dentro do limite de 5 req/min",
+      "Todas as 4 chamadas de API são disparadas em paralelo via coroutines Kotlin — ~250ms vs ~800ms sequencial",
+      "Deploy com Docker de um único comando via Railway"
+    ]
+  },
+  "tech": {
+    "heading": "Stack de Tecnologia",
+    "rows": [
+      {
+        "layer": "Framework web",
+        "choice": "Ktor (motor Netty)",
+        "why": "Nativo de coroutines, leve, Kotlin idiomático"
+      },
+      {
+        "layer": "Cliente HTTP",
+        "choice": "Ktor CIO",
+        "why": "Mesmo ecossistema, compatível com suspend"
+      },
+      { "layer": "JSON", "choice": "kotlinx.serialization", "why": "Kotlin nativo, zero reflexão" },
+      {
+        "layer": "Cache",
+        "choice": "Caffeine (TTL 1h)",
+        "why": "Conformidade com rate limit, padrão JVM"
+      },
+      {
+        "layer": "Briefing com IA",
+        "choice": "GPT-4o",
+        "why": "Interpretação de analytics em linguagem simples"
+      },
+      {
+        "layer": "Frontend",
+        "choice": "HTML estático + Chart.js",
+        "why": "Sem build step, compatível universalmente"
+      },
+      {
+        "layer": "Hospedagem",
+        "choice": "Railway (Docker)",
+        "why": "Tier gratuito JVM, detecção automática de Dockerfile"
+      }
+    ]
+  },
+  "findings": {
+    "heading": "O Que a API Revelou",
+    "p1": "O guia fornecido para esta avaliação tinha dois nomes de gráficos incorretos: 'active_subscriptions' e 'active_trials'. Os nomes válidos são 'actives' e 'trials'. Descoberto na Fase 0 ao testar a API real antes de escrever qualquer Kotlin.",
+    "p2": "O volume de trials do Dark Noise atingiu o pico de 74 em 19 de fev, caiu para 48 em 26 de fev, e se recuperou parcialmente para 66 em 17 de mar — uma variação de 35%. As assinaturas ativas ficaram quase estáveis em ~2.525. Trials são um indicador antecedente; o briefing de IA sinalizou essa correlação e recomendou um e-mail de destaque de funcionalidade no dia 3."
+  },
+  "content": {
+    "heading": "Pacote de Conteúdo",
+    "blog": {
+      "label": "Post no Blog",
+      "title": "Construí um Dashboard de Assinaturas com IA em Kotlin usando a Charts API da RevenueCat",
+      "platform": "Dev.to",
+      "length": "2.047 palavras"
+    },
+    "video": {
+      "label": "Tutorial em Vídeo",
+      "title": "RC Pulse — Dashboard RevenueCat com IA (Kotlin/Ktor)",
+      "length": "~2 minutos",
+      "tool": "Loom"
+    },
+    "social": {
+      "label": "5 Posts Sociais",
+      "platform": "X (Twitter)",
+      "description": "Série de 5 posts em 3 dias: problema → gancho técnico → insight surpreendente → ângulo de IA → CTA. Todos usam dados reais do Dark Noise."
+    }
+  },
+  "growth": {
+    "heading": "Campanha de Crescimento",
+    "description": "Estratégia de distribuição em 6 comunidades com $100 de orçamento para amplificação paga.",
+    "budgetHeading": "Orçamento de $100",
+    "rows": [
+      {
+        "channel": "Boost Dev.to",
+        "amount": "$25",
+        "purpose": "Promoção de 7 dias no feed para leitores #kotlin + #saas"
+      },
+      {
+        "channel": "Post promovido Twitter/X",
+        "amount": "$40",
+        "purpose": "Post CTA direcionado a devs indie + palavras-chave Kotlin"
+      },
+      {
+        "channel": "Newsletter Kotlin Weekly",
+        "amount": "$35",
+        "purpose": "Menção em uma edição (~25k assinantes desenvolvedores Kotlin)"
+      }
+    ],
+    "communities": "r/indiehackers · r/Kotlin · r/SideProject · Hacker News · Dev.to · Twitter/X"
+  },
+  "disclosure": "🤖 Construído por EduwaldoClaudeAge, um agente de IA operado por Eduardo Santos. Este projeto é uma avaliação prática para o cargo de Agentic AI Developer & Growth Advocate da RevenueCat."
+}

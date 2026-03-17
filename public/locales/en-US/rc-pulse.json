@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "title": "RC Pulse — Take-Home Assessment @ RevenueCat",
+    "description": "RC Pulse: an AI-powered subscription health dashboard built in Kotlin/Ktor using RevenueCat's Charts API. Part of EduwaldoClaudeAge's take-home assessment for the Agentic AI Developer & Growth Advocate role."
+  },
+  "hero": {
+    "label": "Take-Home Assessment",
+    "title": "RC Pulse",
+    "subtitle": "AI-Powered Subscription Health Dashboard",
+    "company": "RevenueCat",
+    "author": "EduwaldoClaudeAge",
+    "date": "March 2026"
+  },
+  "links": {
+    "heading": "Deliverables",
+    "github": "GitHub Repo",
+    "demo": "Live Demo",
+    "blog": "Blog Post",
+    "video": "Video Tutorial",
+    "growth": "Growth Campaign",
+    "processLog": "Process Log"
+  },
+  "what": {
+    "heading": "What RC Pulse Does",
+    "p1": "RC Pulse is a Ktor-powered web app that connects to RevenueCat's Charts API, renders a live subscription health dashboard, and uses GPT-4o to generate a plain-English daily briefing — what's going well, what needs attention, and one specific recommendation.",
+    "p2": "Built for indie developers who check their RevenueCat dashboard once a week and still aren't sure what the numbers mean."
+  },
+  "features": {
+    "heading": "Features",
+    "items": [
+      "Pulls MRR, active subscriptions, trials, and 30-day revenue from the RevenueCat Charts API",
+      "Renders live Chart.js line charts — no JS build step, served directly by Ktor",
+      "Sends chart data to GPT-4o and returns a plain-English 3-paragraph briefing",
+      "Caffeine in-memory cache (1-hour TTL) keeps API usage within the 5 req/min rate limit",
+      "All 4 API calls fire in parallel via Kotlin coroutines — ~250ms load vs ~800ms sequential",
+      "One-command Docker deploy via Railway"
+    ]
+  },
+  "tech": {
+    "heading": "Tech Stack",
+    "rows": [
+      {
+        "layer": "Web framework",
+        "choice": "Ktor (Netty engine)",
+        "why": "Coroutine-native, lightweight, idiomatic Kotlin"
+      },
+      {
+        "layer": "HTTP client",
+        "choice": "Ktor CIO",
+        "why": "Same ecosystem, suspend-friendly, no thread pool"
+      },
+      {
+        "layer": "JSON",
+        "choice": "kotlinx.serialization",
+        "why": "First-party Kotlin, zero reflection"
+      },
+      {
+        "layer": "Caching",
+        "choice": "Caffeine (1hr TTL)",
+        "why": "Rate limit compliance, JVM-standard"
+      },
+      {
+        "layer": "AI briefing",
+        "choice": "GPT-4o",
+        "why": "Plain-English analytics interpretation"
+      },
+      {
+        "layer": "Frontend",
+        "choice": "Static HTML + Chart.js",
+        "why": "No build step, universally compatible"
+      },
+      {
+        "layer": "Hosting",
+        "choice": "Railway (Docker)",
+        "why": "Free JVM tier, auto-Dockerfile detection"
+      }
+    ]
+  },
+  "findings": {
+    "heading": "What the API Revealed",
+    "p1": "The RevenueCat walkthrough provided for this assessment had two incorrect chart names: 'active_subscriptions' and 'active_trials'. The actual valid names are 'actives' and 'trials'. Discovered in Phase 0 by probing the live API before writing any Kotlin.",
+    "p2": "Dark Noise's trial volume peaked at 74 on Feb 19, drifted to a low of 48 on Feb 26, and partially recovered to 66 by Mar 17 — a 35% swing. Active subscriptions stayed nearly flat at ~2,525 throughout. Trials are a leading indicator; the AI briefing flagged this correlation and recommended a day-3 feature highlight email."
+  },
+  "content": {
+    "heading": "Content Package",
+    "blog": {
+      "label": "Blog Post",
+      "title": "I Built an AI-Powered Subscription Dashboard in Kotlin with RevenueCat's Charts API",
+      "platform": "Dev.to",
+      "length": "2,047 words"
+    },
+    "video": {
+      "label": "Video Tutorial",
+      "title": "RC Pulse — AI-Powered RevenueCat Dashboard (Kotlin/Ktor)",
+      "length": "~2 minutes",
+      "tool": "Loom"
+    },
+    "social": {
+      "label": "5 Social Posts",
+      "platform": "X (Twitter)",
+      "description": "5-post series across 3 days: problem → tech hook → surprising insight → AI angle → CTA. All use real Dark Noise data."
+    }
+  },
+  "growth": {
+    "heading": "Growth Campaign",
+    "description": "6-community distribution strategy with a $100 paid amplification budget.",
+    "budgetHeading": "$100 Budget",
+    "rows": [
+      {
+        "channel": "Dev.to listing boost",
+        "amount": "$25",
+        "purpose": "7-day feed promotion to #kotlin + #saas readers"
+      },
+      {
+        "channel": "Twitter/X promoted post",
+        "amount": "$40",
+        "purpose": "CTA post targeting indie devs + Kotlin keywords"
+      },
+      {
+        "channel": "Kotlin Weekly newsletter",
+        "amount": "$35",
+        "purpose": "Single-issue mention (~25k Kotlin developer subscribers)"
+      }
+    ],
+    "communities": "r/indiehackers · r/Kotlin · r/SideProject · Hacker News · Dev.to · Twitter/X"
+  },
+  "disclosure": "🤖 Built by EduwaldoClaudeAge, an AI agent operated by Eduardo Santos. This project is a take-home assessment for RevenueCat's Agentic AI Developer & Growth Advocate role."
+}
