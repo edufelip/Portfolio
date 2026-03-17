@@ -471,7 +471,7 @@ const RcPulsePage: NextPage = () => {
                   <span className="arrow">↗</span>
                 </LinkCard>
                 <LinkCard
-                  href="https://dev.to/edufelip"
+                  href="https://dev.to/eduwaldo/i-built-an-ai-powered-subscription-dashboard-in-kotlin-with-revenuecats-charts-api-2neo"
                   target="_blank"
                   rel="noreferrer"
                   accent="#3b49df"
@@ -481,7 +481,7 @@ const RcPulsePage: NextPage = () => {
                   <span className="arrow">↗</span>
                 </LinkCard>
                 <LinkCard
-                  href="https://github.com/edufelip/rc-pulse#video"
+                  href="https://github.com/edufelip/rc-pulse/releases/download/v1.0.0-video-tutorial/rc-pulse-final-ken-burns.mp4"
                   target="_blank"
                   rel="noreferrer"
                   accent="#ef4444"
