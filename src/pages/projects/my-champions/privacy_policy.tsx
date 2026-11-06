@@ -20,7 +20,7 @@ const MyChampionsPrivacyPolicy: NextPage = () => {
           <SupportBody>
             <PrivacyPolicyBody className="support_body">
               <h1>Privacy Policy</h1>
-              <p className="support_meta">Effective date: March 9, 2026</p>
+              <p className="support_meta">Effective date: November 6, 2026</p>
 
               <p>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Eduardo Santos built the <b>MyChampions</b> app as a
@@ -67,6 +67,12 @@ const MyChampionsPrivacyPolicy: NextPage = () => {
                   <li>
                     <b>Subscription data</b> — purchase and entitlement status managed by
                     RevenueCat. We do not store payment card details.
+                  </li>
+                  <li>
+                    <b>Waitlist data</b> — if you join the early-access waitlist on
+                    appmychampions.com, we store your email address and the role you picked (for
+                    example coach or nutritionist). We use it only to tell you when MyChampions is
+                    available, and we delete it on request at the address below.
                   </li>
                 </ul>
               </div>
